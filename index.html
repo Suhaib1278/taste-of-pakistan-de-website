@@ -159,20 +159,14 @@
     </section>
 
     <section id="location" class="bg-stone-100 py-24">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
             
-            <div class="relative rounded-2xl overflow-hidden h-[450px] shadow-2xl group">
-                <!-- <iframe 
-                    class="w-full h-full"
-                    style="border:0;" 
-                    loading="lazy" 
-                    allowfullscreen 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.7952869158103!2d8.667610022425789!3d50.10758376849638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0fe977af8fa7%3A0x4f340c02836e7cb6!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1766949064369!5m2!1sen!2sde">
-                </iframe> -->
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8512358949733!2d8.666409776459725!3d50.107791411977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0fe977af8fa7%3A0x4f340c02836e7cb6!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1766955243571!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div class="relative rounded-2xl overflow-hidden h-[450px] shadow-2xl group w-full" 
+                onclick="this.querySelector('iframe').style.pointerEvents='auto'">
                 <iframe 
+                    class="w-full h-full pointer-events-none"
                     data-cookieconsent="marketing"
-                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.8512358949733!2d8.666409776459725!3d50.107791411977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0fe977af8fa7%3A0x4f340c02836e7cb6!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1766955243571!5m2!1sen!2sde" 
+                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.186634599139!2d8.666991377317781!3d50.10185967152643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0bf554045f3d%3A0x6731e84a2592d378!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1710000000000" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
@@ -181,13 +175,14 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
-                <a href="https://maps.app.goo.gl/h2nH9j3ikgfGBjG6A" target="_blank" class="absolute bottom-4 right-4 bg-white text-stone-900 px-4 py-2 rounded-lg text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-2">
+                <a href="https://maps.app.goo.gl/T8f6L5V4WqY7mXz76" target="_blank" 
+                class="absolute bottom-4 left-4 right-4 md:left-auto md:w-auto bg-white text-stone-900 px-6 py-3 rounded-xl font-bold shadow-lg flex items-center justify-center gap-2 active:scale-95 transition md:opacity-0 md:group-hover:opacity-100">
                     <svg class="w-4 h-4 text-rose-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
                     Open in Google Maps
                 </a>
             </div>
 
-            <div class="space-y-8 md:pl-12">
+            <div class="space-y-8 md:pl-12 w-full">
                 <h2 class="text-4xl font-serif">Visit Us in Frankfurt</h2>
                 
                 <div class="space-y-6">
@@ -214,7 +209,7 @@
                                 <p class="text-lg font-medium">069 939 99 980</p>
                             </div>
                             <a href="mailto:Info@tasteofpakistan.de" class="flex items-center gap-3 text-stone-700 hover:text-rose-600 transition ml-1">
-                                <p class="text-lg font-medium italic text-stone-400 text-decoration-none">Email:</p>
+                                <p class="text-lg font-medium italic text-stone-400">Email:</p>
                                 <p class="text-lg font-medium underline decoration-stone-300">Info@tasteofpakistan.de</p>
                             </a>
                         </div>
