@@ -1,52 +1,174 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="de" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="94a3dcdb-de48-472a-9c9e-25306dab16d1"  type="text/javascript"></script>
-    <title>Legal | Taste of Pakistan</title>
+    
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="94a3dcdb-de48-472a-9c9e-25306dab16d1" type="text/javascript"></script>
+    
+    <title>Impressum & Datenschutz | Taste of Pakistan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .bg-pakistan-green { background-color: #006622; }
+        /* LOGO STYLES (Must include these so the logo looks the same as home) */
+        .logo-stack { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 0.1; }
+        .logo-line-one { display: flex; align-items: baseline; width: 100%; }
+        .logo-main { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; line-height: 1; }
+        .tracking-justify-taste { letter-spacing: 0.1em; margin-right: 0.1em; }
+        .tracking-standard { letter-spacing: 0.02em; }
+        .logo-script { font-family: 'Mrs Saint Delafield', cursive; font-weight: 400; transform: rotate(-5deg) translateY(-0.1em); }
+        .logo-pull-up { margin-top: -0.35em; display: block; }
+        
+        /* Truck Art Gradient
+        .truck-art-gradient { height: 8px; background: linear-gradient(90deg, #FFD700 0%, #FF0000 20%, #00FF00 40%, #0000FF 60%, #FF00FF 80%, #FFD700 100%); } */
+        
+        /* Prose Styling for Legal Text */
+        .prose h1 { font-family: 'Playfair Display', serif; }
+        .prose h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; margin-top: 1.5em; margin-bottom: 0.5em; }
+        .prose p { margin-bottom: 1em; line-height: 1.6; }
     </style>
 </head>
-<body class="bg-[#fdfbf7] text-stone-900">
+<body class="bg-[#fdfbf7] text-stone-900 flex flex-col min-h-screen">
 
-    <nav class="bg-white/80 backdrop-blur-md border-b border-stone-200 py-4 px-6 sticky top-0">
-        <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-pakistan-green">TASTE OF PAKISTAN</span>
-            <a href="index.html" class="text-sm font-bold uppercase tracking-widest hover:text-rose-600 transition">← Back to Home</a>
+    <!-- <div class="truck-art-gradient w-full"></div> -->
+    <!-- <nav class="sticky top-0 z-50 bg-[#024510] border-b border-white/10 shadow-lg h-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 h-full flex justify-between items-center">
+            
+            <a href="index.html">
+                <img src="logo.jpg" alt="Taste of Pakistan" class="h-24 w-auto object-contain">
+            </a>
+            
+            <div class="flex gap-2 md:gap-10 font-medium text-[10px] md:text-sm uppercase tracking-widest text-white">
+                <a href="index.html#menu" class="hover:text-yellow-400 transition">Menu</a>
+                <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="index.html#location" class="hover:text-yellow-400 transition">Location</a>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-6">
+                <a href="index.html" class="text-xs font-bold border-b-2 border-white text-white tracking-widest">BACK</a>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="sticky top-0 z-50 bg-[#024510] border-b border-white/10 shadow-lg h-24">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 h-full flex justify-between items-center">
+            
+            <a href="index.html" class="flex-shrink-0">
+                <img src="logo.jpg" alt="Taste of Pakistan" class="h-16 md:h-20 w-auto object-contain">
+            </a>
+            
+            <div class="flex items-center gap-3 md:gap-8 font-medium text-[10px] md:text-xs uppercase tracking-widest text-white">
+                
+                <a href="index.html" class="hidden md:inline hover:text-yellow-400 transition">Home</a>
+                
+                <a href="index.html#menu" class="hover:text-yellow-400 transition">Menu</a>
+                <a href="index.html#location" class="hover:text-yellow-400 transition">Location</a>
+                <a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-4 flex-shrink-0">
+                <button class="text-[10px] md:text-xs font-bold border-b-2 border-white text-white tracking-widest">EN</button>
+                <button class="text-[10px] md:text-xs font-bold text-white/60 hover:text-white transition tracking-widest">DE</button>
+            </div>
+
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-6 py-12 space-y-16">
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-16 w-full">
         
-        <section id="impressum" class="prose prose-stone max-w-none">
-            <h1 class="text-4xl mb-8 border-b-2 border-pakistan-green pb-4">Impressum</h1>
-            
-            <div class="bg-yellow-100 p-8 border-l-4 border-yellow-500 text-yellow-800">
-                <p class="font-bold">⚠️ ACTION REQUIRED:</p>
-                <p>Paste the "Impressum" HTML from eRecht24 here.</p>
-            </div>
-            </section>
+        <section id="impressum" class="prose prose-stone max-w-none mb-20 border-b border-stone-300 pb-16">
+            <h1 class="text-4xl mb-8 border-b-2 border-[#024510] pb-4">Impressum</h1>
+
+            <p>
+                <strong>Day &amp; Nite GmbH</strong><br>
+                Münchener Str. 28<br>
+                60329 Frankfurt am Main
+            </p>
+
+            <p>
+                <strong>Handelsregister:</strong><br>
+                Registergericht: Frankfurt am Main<br>
+                Registernummer: HRB 136077
+            </p>
+
+            <p>
+                <strong>Vertreten durch:</strong><br>
+                [ENTER OWNER NAME HERE]
+            </p>
+
+            <h2>Kontakt</h2>
+            <p>
+                Telefon: +49 (0) 69 93999980<br>
+                E-Mail: Info@daynnite.de
+            </p>
+
+            <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+            <p>
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+
+            <p class="text-sm text-gray-500 mt-8">
+                Quelle: <a href="https://www.e-recht24.de" target="_blank" class="underline">e-recht24.de</a>
+            </p>
+        </section>
 
         <section id="privacy" class="prose prose-stone max-w-none">
-            <h1 class="text-4xl mb-8 border-b-2 border-pakistan-green pb-4">Datenschutzerklärung (Privacy Policy)</h1>
+            <h1 class="text-4xl mb-8 border-b-2 border-[#024510] pb-4">Datenschutzerklärung</h1>
             
-            <div class="bg-yellow-100 p-8 border-l-4 border-yellow-500 text-yellow-800">
-                <p class="font-bold">⚠️ ACTION REQUIRED:</p>
-                <p>Paste the "Datenschutzerklärung" HTML from eRecht24 here.</p>
+            <div class="bg-gray-100 p-6 rounded-lg text-sm">
+                <p class="font-bold text-red-600 mb-2">TODO:</p>
+                <p>Paste the long German text that starts with "Datenschutzerklärung..." from eRecht24 right here in this section.</p>
             </div>
-            </section>
+        </section>
 
     </main>
 
-    <footer class="bg-stone-900 text-stone-400 py-12 text-center text-xs uppercase tracking-widest">
-        <p>© 2025 Taste of Pakistan Frankfurt</p>
+    <footer class="bg-[#024510] text-white/80 py-16 px-6 border-t border-white/10 mt-auto">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col items-center">
+                
+                <img src="logo.jpg" alt="Taste of Pakistan" class="h-32 w-auto object-contain mb-8">
+                
+                <div class="flex gap-8 mb-12">
+                    <a href="https://www.instagram.com/tasteofpakistanffm/" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+                        <div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-rose-500 group-hover:bg-rose-500/10 transition-all shadow-lg">
+                            <svg class="w-5 h-5 text-white group-hover:text-rose-500 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c.796 0 1.441.645 1.441 1.44s-.645 1.44-1.441 1.44c-.795 0-1.439-.645-1.439-1.44s.644-1.44 1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Instagram</span>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@taste.of.pakistan" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+                        <div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#fe2c55] group-hover:bg-[#fe2c55]/10 transition-all shadow-lg">
+                            <svg class="w-5 h-5 text-white group-hover:text-[#fe2c55] transition-colors" fill="currentColor" viewBox="0 0 448 512">
+                                <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"/>
+                            </svg>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">TikTok</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/tasteofpakistanffm/" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
+                        <div class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-blue-600 group-hover:bg-blue-600/10 transition-all shadow-lg">
+                            <svg class="w-5 h-5 text-white group-hover:text-blue-600 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </div>
+                        <span class="text-[10px] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Facebook</span>
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] uppercase tracking-[0.2em] mb-8">
+                    <a href="legal.html#impressum" class="hover:text-white transition">Impressum</a>
+                    <a href="legal.html#privacy" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="javascript:Cookiebot.renew()" class="hover:text-white transition">Cookie Settings</a>
+                </div>
+
+                <p class="text-[10px] uppercase tracking-[0.3em] text-white/50 italic">
+                    © 2025 Taste of Pakistan Frankfurt. Authentic Pakistani Cuisine.
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
