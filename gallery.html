@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Taste of Pakistan</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Mrs+Saint+Delafield&family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> -->
     <style>
-        /* Shared Styles */
+        /* 1. LOAD LOCAL FONTS (Matches index.html) */
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('./fonts/inter-v18-latin-300.woff2') format('woff2'); }
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('./fonts/inter-v18-latin-regular.woff2') format('woff2'); }
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('./fonts/inter-v18-latin-600.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url('./fonts/montserrat-v29-latin-600.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url('./fonts/montserrat-v29-latin-700.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 800; font-display: swap; src: url('./fonts/montserrat-v29-latin-800.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap; src: url('./fonts/montserrat-v29-latin-900.woff2') format('woff2'); }
+        @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url('./fonts/playfair-display-v37-latin-700.woff2') format('woff2'); }
+        @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 700; font-display: swap; src: url('./fonts/playfair-display-v37-latin-700italic.woff2') format('woff2'); }
+
+        /* 2. GLOBAL TYPOGRAPHY */
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        
-        /* Logo Styles (Same as index.html) */
-        .logo-stack { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 0.1; }
-        .logo-line-one { display: flex; align-items: baseline; width: 100%; }
-        .logo-main { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; line-height: 1; }
-        .tracking-justify-taste { letter-spacing: 0.1em; margin-right: 0.1em; }
-        .tracking-standard { letter-spacing: 0.02em; }
-        .logo-script { font-family: 'Mrs Saint Delafield', cursive; font-weight: 400; transform: rotate(-5deg) translateY(-0.1em); }
-        .logo-pull-up { margin-top: -0.35em; display: block; }
+        nav a, button, .tracking-widest { font-family: 'Montserrat', sans-serif; }
     </style>
 </head>
 <body class="bg-[#fdfbf7] text-stone-900 flex flex-col min-h-screen">
