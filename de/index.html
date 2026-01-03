@@ -44,6 +44,11 @@
         .slide-img:nth-child(2) { animation-delay: 6s; }
         .slide-img:nth-child(3) { animation-delay: 12s; }
         .slide-img:nth-child(4) { animation-delay: 18s; }
+
+        /* Add this at the end of your existing <style> block */
+        .cookieconsent-optin-marketing .cookieconsent-optout-marketing {
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-[#fdfbf7] text-stone-900">
@@ -165,10 +170,19 @@
             <div class="relative rounded-2xl overflow-hidden h-[450px] shadow-2xl group w-full" 
                 onclick="this.querySelector('iframe').style.pointerEvents='auto'">
 
+                <div class="cookieconsent-optout-marketing absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-stone-100 border-2 border-dashed border-stone-300 z-10">
+                    <p class="text-stone-600 mb-4 font-medium text-sm">
+                        Um unseren Standort auf der Karte zu sehen, akzeptieren Sie bitte die Marketing-Cookies.
+                    </p>
+                    <button onclick="Cookiebot.renew()" class="bg-[#024510] text-white px-6 py-2 rounded-full text-[10px] uppercase tracking-widest hover:bg-yellow-500 transition-colors">
+                        Cookies Akzeptieren
+                    </button>
+                </div>
+
                 <iframe 
-                    class="w-full h-full pointer-events-none"
+                    class="w-full h-full"
                     data-cookieconsent="marketing"
-                    data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.851419711155!2d8.666409776724372!3d50.10778797152879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0fe977af8fa7%3A0x4f340c02836e7cb6!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1767401486004!5m2!1sen!2sde" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.851419711155!2d8.666409776724372!3d50.10778797152879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0fe977af8fa7%3A0x4f340c02836e7cb6!2sTaste%20of%20Pakistan!5e0!3m2!1sen!2sde!4v1767401486004!5m2!1sen!2sde" 
                     width="100%" 
                     height="100%" 
                     style="border:0;" 
