@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* 1. LOAD LOCAL FONTS (Matches index.html) */
-        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('./fonts/inter-v18-latin-300.woff2') format('woff2'); }
-        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('./fonts/inter-v18-latin-regular.woff2') format('woff2'); }
-        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('./fonts/inter-v18-latin-600.woff2') format('woff2'); }
-        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url('./fonts/montserrat-v29-latin-600.woff2') format('woff2'); }
-        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url('./fonts/montserrat-v29-latin-700.woff2') format('woff2'); }
-        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 800; font-display: swap; src: url('./fonts/montserrat-v29-latin-800.woff2') format('woff2'); }
-        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap; src: url('./fonts/montserrat-v29-latin-900.woff2') format('woff2'); }
-        @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url('./fonts/playfair-display-v37-latin-700.woff2') format('woff2'); }
-        @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 700; font-display: swap; src: url('./fonts/playfair-display-v37-latin-700italic.woff2') format('woff2'); }
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('../fonts/inter-v18-latin-300.woff2') format('woff2'); }
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/inter-v18-latin-regular.woff2') format('woff2'); }
+        @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/inter-v18-latin-600.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/montserrat-v29-latin-600.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/montserrat-v29-latin-700.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/montserrat-v29-latin-800.woff2') format('woff2'); }
+        @font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 900; font-display: swap; src: url('../fonts/montserrat-v29-latin-900.woff2') format('woff2'); }
+        @font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/playfair-display-v37-latin-700.woff2') format('woff2'); }
+        @font-face { font-family: 'Playfair Display'; font-style: italic; font-weight: 700; font-display: swap; src: url('../fonts/playfair-display-v37-latin-700italic.woff2') format('woff2'); }
 
         /* 2. GLOBAL TYPOGRAPHY */
         body { font-family: 'Inter', sans-serif; }
@@ -52,28 +52,28 @@
         <div class="max-w-7xl mx-auto px-4 md:px-6 h-full flex justify-between items-center">
             
             <a href="index.html" class="flex-shrink-0">
-                <img src="logo.jpg" alt="Taste of Pakistan" class="h-16 md:h-20 w-auto object-contain">
+                <img src="../logo.jpg" alt="Taste of Pakistan" class="h-16 md:h-20 w-auto object-contain">
             </a>
             
             <div class="flex items-center gap-3 md:gap-8 font-medium text-[10px] md:text-xs uppercase tracking-widest text-white">
-                <a href="index.html" class="hidden md:inline hover:text-yellow-400 transition">Startseite</a>
-                <a href="index.html#menu" class="hover:text-yellow-400 transition">Speisekarte</a>
-                <a href="index.html#location" class="hover:text-yellow-400 transition">Standort</a>
-                <a href="gallery.html" class="hover:text-yellow-400 transition">Galerie</a>
+                <a href="index.html" class="hidden md:inline hover:text-yellow-400 transition">Home</a>
+                <a href="index.html#menu" class="hover:text-yellow-400 transition">Menu</a>
+                <a href="index.html#location" class="hover:text-yellow-400 transition">Location</a>
+                <a href="gallery.html" class="hover:text-yellow-400 transition">Gallery</a>
             </div>
 
             <div class="flex items-center gap-3 md:gap-6 flex-shrink-0">
-                <a href="en/gallery.html" class="text-[10px] md:text-xs font-bold text-white/60 hover:text-white transition tracking-widest">EN</a>
+                <a href="gallery.html" class="text-[10px] md:text-xs font-bold border-b-2 border-white text-white tracking-widest">EN</a>
                 
-                <a href="gallery.html" class="text-[10px] md:text-xs font-bold border-b-2 border-white text-white tracking-widest">DE</a>
+                <a href="../gallery.html" class="text-[10px] md:text-xs font-bold text-white/60 hover:text-white transition tracking-widest">DE</a>
             </div>
 
         </div>
     </nav>
 
     <div class="bg-stone-900 text-white py-20 px-6 text-center">
-        <span class="text-yellow-500 font-bold tracking-[0.2em] uppercase text-xs block mb-4">Einblick In Unsere Tradition</span>
-        <h1 class="text-4xl md:text-6xl font-serif">Unsere Galerie</h1>
+        <span class="text-yellow-500 font-bold tracking-[0.2em] uppercase text-xs block mb-4">Glimpses of Tradition</span>
+        <h1 class="text-4xl md:text-6xl font-serif">Our Gallery</h1>
     </div>
 
     <section class="flex-grow py-24 bg-[#fdfbf7]">
@@ -82,102 +82,102 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
     
                 <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods1.jpg" 
+                    <img src="../multiple_foods1.jpg" 
                         alt="A Feast at Taste of Pakistan" 
                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
                 </div>
 
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="photo_of_owner.jpg" alt="The Owner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../photo_of_owner.jpg" alt="The Owner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods2.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods3.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods4.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods2.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods5.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods3.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods6.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods7.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods8.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods4.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="multiple_foods9.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods5.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="seating_photo1.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods6.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="seating_photo2.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods7.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="seating_photo3.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food1.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food2.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food3.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food4.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods8.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food5.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../multiple_foods9.jpg" alt="Delicious Spread" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food6.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../seating_photo1.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food7.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../seating_photo2.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food8.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food9.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food10.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food11.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                </div>
-                <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food12.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../seating_photo3.jpg" alt="Restaurant Seating" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food13.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../food1.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food14.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../food2.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food15.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../food3.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <div class="relative group overflow-hidden rounded-2xl">
-                    <img src="food16.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="../food4.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food5.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food6.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food7.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food8.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food9.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food10.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food11.JPG" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food12.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food13.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food14.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food15.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl">
+                    <img src="../food16.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
                 <!-- <div class="relative group overflow-hidden rounded-2xl">
                     <img src="food17.jpeg" alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
@@ -191,7 +191,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col items-center">
                 
-                <img src="logo.jpg" alt="Taste of Pakistan" class="h-32 w-auto object-contain mb-8">
+                <img src="../logo.jpg" alt="Taste of Pakistan" class="h-32 w-auto object-contain mb-8">
                 
                 <div class="flex gap-8 mb-12">
                     <a href="https://www.instagram.com/tasteofpakistanffm/" target="_blank" class="group flex flex-col items-center gap-2 transition-all">
@@ -212,13 +212,13 @@
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] uppercase tracking-[0.2em] mb-8">
-                    <a href="legal.html#impressum" class="hover:text-white transition">Impressum</a>
-                    <a href="legal.html#privacy" class="hover:text-white transition">Datenschutz</a>
-                    <a href="javascript:Cookiebot.renew()" class="hover:text-white transition">Cookie-Einstellungen</a>
+                    <a href="legal.html#impressum" class="hover:text-white transition">Legal Notice (Impressum)</a>
+                    <a href="legal.html#privacy" class="hover:text-white transition">Privacy Policy (Datenschutz)</a>
+                    <a href="javascript:Cookiebot.renew()" class="hover:text-white transition">Cookie Settings</a>
                 </div>
 
                 <p class="text-[10px] uppercase tracking-[0.3em] text-white/50 italic">
-                    © 2026 Taste of Pakistan Frankfurt. Authentische pakistanische Küche.
+                    © 2026 Taste of Pakistan Frankfurt. Authentic Pakistani Kitchen.
                 </p>
             </div>
         </div>
